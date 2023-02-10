@@ -13,10 +13,10 @@ const ChannelDetail = () => {
   const { id } = useParams()
   console.log(channelDetail)
 
-  useEffect(() => {
-    fetchFromAPI(`channels?part=snippet&id=${id}`)
-      .then((data) => setChannelDetail(data.item));
-  }, [id])
+  // useEffect(() => {
+  //   fetchFromAPI(`channels?part=snippet&id=${id}`)
+  //     .then((data) => setChannelDetail(data.item));
+  // }, [id])
 
 
   return (
